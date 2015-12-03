@@ -1,6 +1,3 @@
-* {
-	border:1px solid transparent;
-}
 body {
 
 }
@@ -8,12 +5,13 @@ body {
 .banner{
 	background-image: url("http://wideopentech.com/themes/wot-2013-gm/_/img/wot-masthead-dark.png");
 	width:100%;
-	height:600px;
+	height:auto;
 }
 
 header {
+
 	margin:auto;
-	padding:40px;
+	padding:40px 40px 40px 0px;
 	width:100%;
 	display: flex;
 	flex-direction: row;
@@ -25,15 +23,155 @@ header {
 
 
 
-header a {
+header a{
 	text-decoration: none;
 	color: #fff;
-	margin:15px;
+	margin:8px;
 	font-family: "Open Sans";
+	text-align: center;
+}
+
+header a:hover {
+	color:#bdd537
 }
 
 header a img {
 
-	height: 50px;
-	margin-right: 75px;
+	height: 45px;
+	width:225px;
+	margin-right: 120px;
+}
+
+.workshop {
+	color: #fff;
+	font-family: "Oswald";
+	font-weight: 300;
+	max-width: 760px;
+	margin: 0 auto;
+}
+
+.workshop .Digital {
+	font-size: 22px;
+	margin: 0 auto;
+}
+
+.workshop h1 {
+	font-size: 152px;
+	margin:0 auto;
+	text-align: center;
+	line-height: 140px;
+	font-weight: 200;
+}
+
+.workshop .Building {
+	text-align: center;
+	font-size:18px;
+	margin-top:12px;
+}
+
+.workshop .Building:before, .workshop .Building:after {
+	content: " ";
+    display: inline-block;
+    background: #fff;
+    height: 9px;
+    width: 10%;
+    position: relative;
+}
+
+.workshop .Building:before {
+	right: 12%;
+}
+
+.workshop .Building:after {
+	left: 12%;
+}
+
+.workshop .span1 {
+	color:#ff803a;
+}
+
+.workshop .span2 {
+	color:#bdd537;
+}
+
+.fliplinks {
+	height:auto;
+	width:100%;
+	margin:0;
+	padding-bottom: 30px;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content:center;
+	align-items:center;
+	align-content:center;
+}
+
+.flip1, .flip2, .flip3, .flip4, .flip5 {
+	text-align: center;
+	height:190px;
+	width:192px;
+	float:left;
+	margin:0 0 5px 0;
+}
+
+.fliplinks a {
+	text-decoration: none;
+	color: #fff;
+	margin:0;
+	font-family: "Open Sans";
+	text-align: center;
+}
+
+.flip1 p,.flip2 p, .flip3 p, .flip4 p, .flip5 p{
+	width:65%;
+	margin:auto;
+}
+
+.fliplinks a:hover{
+	transform:rotateY(180deg);
+	transition:2s;
+
+}
+
+.flip1 {
+	background-color: #2ec2a8;
+
+}
+
+.flip2 {
+	background-color: #40666d;
+
+}
+
+.flip3 {
+	background-color: #878787;
+
+}
+
+.flip4 {
+	background-color: #45c1cc;
+
+}
+
+.flip5 {
+	background-color: #bdd537;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:850px) {
+	.banner {
+		height:900px;
+	}
 }
